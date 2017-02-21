@@ -29,6 +29,7 @@
 		DD40904054CDCB8F7328366D /* Pods_caffeSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_caffeSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F513341E5BC1D600680AAF /* caffeSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = caffeSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F513371E5BC1D600680AAF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E9F513411E5BC9B200680AAF /* caffe.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = caffe.proto; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				E9F513371E5BC1D600680AAF /* main.swift */,
+				E9F513411E5BC9B200680AAF /* caffe.proto */,
 			);
 			path = caffeSwift;
 			sourceTree = "<group>";
@@ -314,6 +316,7 @@
 				E9F5133D1E5BC1D600680AAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
