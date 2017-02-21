@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4ED1163A61DA03CDDB30903 /* Pods_caffeSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD40904054CDCB8F7328366D /* Pods_caffeSwift.framework */; };
 		E9F513381E5BC1D600680AAF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F513371E5BC1D600680AAF /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		24C39A206BFCDFB3E0E20ACA /* Pods-caffeSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caffeSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-caffeSwift/Pods-caffeSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		3EFA9E995F1D686120BEE26D /* Pods-caffeSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caffeSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-caffeSwift/Pods-caffeSwift.release.xcconfig"; sourceTree = "<group>"; };
+		DD40904054CDCB8F7328366D /* Pods_caffeSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_caffeSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F513341E5BC1D600680AAF /* caffeSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = caffeSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F513371E5BC1D600680AAF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,17 +36,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4ED1163A61DA03CDDB30903 /* Pods_caffeSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		290D21314CBF863B5B1D7998 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24C39A206BFCDFB3E0E20ACA /* Pods-caffeSwift.debug.xcconfig */,
+				3EFA9E995F1D686120BEE26D /* Pods-caffeSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9F5DD84F8AA6399387152131 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD40904054CDCB8F7328366D /* Pods_caffeSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E9F5132B1E5BC1D600680AAF = {
 			isa = PBXGroup;
 			children = (
 				E9F513361E5BC1D600680AAF /* caffeSwift */,
 				E9F513351E5BC1D600680AAF /* Products */,
+				290D21314CBF863B5B1D7998 /* Pods */,
+				9F5DD84F8AA6399387152131 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,9 +93,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9F5133B1E5BC1D600680AAF /* Build configuration list for PBXNativeTarget "caffeSwift" */;
 			buildPhases = (
+				441036E0131AC07D72189BE7 /* [CP] Check Pods Manifest.lock */,
 				E9F513301E5BC1D600680AAF /* Sources */,
 				E9F513311E5BC1D600680AAF /* Frameworks */,
 				E9F513321E5BC1D600680AAF /* CopyFiles */,
+				DF501E7CBFE267F9ABD93991 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -115,6 +141,39 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		441036E0131AC07D72189BE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF501E7CBFE267F9ABD93991 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-caffeSwift/Pods-caffeSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9F513301E5BC1D600680AAF /* Sources */ = {
@@ -218,6 +277,7 @@
 		};
 		E9F5133C1E5BC1D600680AAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24C39A206BFCDFB3E0E20ACA /* Pods-caffeSwift.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = Q69A544BPS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -227,6 +287,7 @@
 		};
 		E9F5133D1E5BC1D600680AAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EFA9E995F1D686120BEE26D /* Pods-caffeSwift.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = Q69A544BPS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
