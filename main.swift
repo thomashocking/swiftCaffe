@@ -10,3 +10,5 @@ import Foundation
 
 print("Hello, World!")
 
+print("Swift Protobuf ayy")
+
